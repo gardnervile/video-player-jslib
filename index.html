@@ -5,30 +5,33 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/fonts/font-awesome.min.css">
   <style type="text/css">
-    .player {
-    width: 800px;
-    height: 600px;
-    box-shadow: 0 0 30px rgba(0,0,0,5)
+    .player-container {
+      width: 800px;
+      height: 600px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
     }
-    .video-window {
-    width: 100%;
-    height: 100%;
+    .video-container {
+      flex-grow: 1;
     }
-    .background {
-    background-color: black;
+
+    .control-buttons-panel {
+      background-color: black;
     }
+
     .player-button {
-    border-style: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
+      border-style: none;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
     }
   </style>
 </head>
 <body>
-    <div class="player" id="player">
-        <div class="video-window js-video-container"></div>
-        <div class="background">
+    <div id="player" class="player-container">
+        <div class="js-video-container video-container"></div>
+        <div class="control-buttons-panel">
           <button class="player-button js-play-button"><i class="fa fa-play" aria-hidden="true"></i></button>
           <button class="player-button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
 </div>
