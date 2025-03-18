@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/375.png">
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
@@ -30,6 +31,8 @@
       cursor: pointer;
       background-color: transparent;
       color: white;
+      font-size: x-large;
+      margin-right: 10px;
       font-size: 20px;
       margin-right: 2px;
     }
@@ -48,6 +51,15 @@
       position: relative;
       left: 8px;
     }
+    .time-display {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      font-size: 16px;
+      margin-left: 10px;
+      display: flex; 
+      justify-content: space-between; 
+      width: 100%;"
+    }
   </style>
 </head>
 <body>
@@ -58,6 +70,11 @@
           <button class="player-button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
           <button class="player-button js-mute-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
           <button class="player-button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+          <div class="time-display">
+            <span class="js-current-time">0:00</span>
+            <div></div>
+            <span class="js-duration">0:00</span>
+        </div>
           <div class="flex-spacer"></div>
           <button class="player-button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
 
