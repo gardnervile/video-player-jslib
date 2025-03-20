@@ -55,11 +55,50 @@
       font-family: 'Roboto', sans-serif;
       color: white;
       font-size: 16px;
-      margin-left: 10px;
+      margin-left: 12px;
       display: flex; 
       justify-content: space-between; 
-      width: 100%;"
+      width: 100%;
     }
+    .progress-container {
+      width: 19%;
+      height: 5px;
+      background-color: black;
+      position: relative;
+      margin-top: 5px;
+      cursor: pointer;
+      right: 215px;
+      top: 2px;
+      border-radius: 3px;
+    }
+    .progress-slider {
+      height: 5px;
+      width: 0%;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 2px;
+    }
+    .js-duration {
+      position: relative;
+      left: 4px;
+
+    }
+    .slider-thumb {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      background-color: red;
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+
+
   </style>
 </head>
 <body>
@@ -72,7 +111,11 @@
           <button class="player-button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
           <div class="time-display">
             <span class="js-current-time">0:00</span>
-            <div></div>
+            <div class="progress-container js-progress">
+              <div class="progress-slider js-progress-slider">
+                <div class="slider-thumb"></div>
+              </div>
+            </div>
             <span class="js-duration">0:00</span>
         </div>
           <div class="flex-spacer"></div>

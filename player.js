@@ -127,6 +127,7 @@ function createPlayer({
     showDuration();
   })();
 
+
   function throttle(func, ms) {
     // Source code snippet https://learn.javascript.ru/task/throttle
 
