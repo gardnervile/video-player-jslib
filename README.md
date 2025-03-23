@@ -9,6 +9,8 @@
 
 Построен на базе библиотеки [Playable](https://wix.github.io/playable/).
 
+Готовый сайт [тут](https://gardnervile.github.io/video-player-jslib/)
+
 ## Примеры
 
 Два рабочих примера:
